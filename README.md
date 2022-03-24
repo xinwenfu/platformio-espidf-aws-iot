@@ -7,8 +7,11 @@ Load the project into VS Code: *File* -> *Open Folder ...*
 
 ## Things to configure
 
-WiFi SSID, password at example configuration of menuconfig
-AWS end point at component config of Amazon web services ...
+Run memuconfig: *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*
+- example configuration
+  - WiFi SSID, password at  of menuconfig
+- Component config 
+  - AWS end point at  of Amazon web services ...
 
 ## Create certificate, policy at AWS IoT
 
