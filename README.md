@@ -1,22 +1,10 @@
-How to build PlatformIO based project
-=====================================
+## Things to configure
 
-1. [Install PlatformIO Core](http://docs.platformio.org/page/core.html)
-2. Download [development platform with examples](https://github.com/platformio/platform-espressif32/archive/develop.zip)
-3. Extract ZIP archive
-4. Run these commands:
+WiFi SSID, password at example configuration of menuconfig
+AWS end point at component config of Amazon web services ...
 
-```shell
+## Create certificate, policy at AWS IoT
 
-# Change directory to example
-$ cd platform-espressif32/examples/espidf-aws-iot
-
-# Build project
-$ pio run
-
-# Upload firmware
-$ pio run --target upload
-
-# Clean build files
-$ pio run --target clean
-```
+## Replace local certificate and key file
+certificate.pem.crt
+private.pem.key
