@@ -1,3 +1,10 @@
+## Download the project and load it into VS Code
+```
+git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
+```
+
+Load the project into VS Code: *File* -> *Open Folder ...*
+
 ## Things to configure
 
 WiFi SSID, password at example configuration of menuconfig
