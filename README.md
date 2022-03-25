@@ -3,6 +3,7 @@
 This project shows an example of subcribing and publishing to AWS IoT with the MQTT protocol.
 
 ## Download the project 
+The project is the PlatformIO AWS IoT example project.
 ```
 git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 ```
