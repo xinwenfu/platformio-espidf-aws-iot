@@ -52,7 +52,8 @@ Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Pr
    - Certificate -> Add certificate -> Create certificate
      - Certificate -> Auto-generate new certificate (recommended)
      - Certificate status -> Active
-       - Download certificates and keys. Download all certificates and keys. In particular, we need *Device certificate* and *Private key file*.
+       - Download certificates and keys. Download all certificates and keys. 
+       - In particular, we need *Device certificate* and *Private key file*.
      - Click the created certificate and attach the created policy
 
 ## Change device certificate and key file within VS code
