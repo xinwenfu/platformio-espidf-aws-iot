@@ -29,8 +29,8 @@ Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Pr
        - Download certificates and keys. Download all certificates and keys. In particular, we need *Device certificate* and *Private key file*.
 
 ## Create policy at AWS IoT Console
-1. Log into AWS IoT console
-2. Search and use *IoT Core* service
+1. (Optional if already in AWS IoT console) Log into AWS IoT console
+2. (Optional if already using IoT Core) Search and use *IoT Core* service
 3. Secure
    - Policies -> Create policy
      - Policy name
