@@ -58,3 +58,8 @@ When the project is loaded into VS Code, there are three files under src->certs
 1. aws-root-ca.pem. No need to change
 2. certificate.pem.crt. Replace its content with the content of downloaded *Device certificate*
 3. private.pem.key. Replace its content with the content of downloaded *Private key file*
+
+## Build, upload and serial monitor
+Now build the project, and upload the firmware into ESP32. Use serial monitor to monitor the output from ESP32.
+
+Within the IoT core console, use the Test -> MQTT test client. The project code publishes MQTT data to the topic *test_topic/esp32*. The MQTT test client can be used to publish and subscribe to *test_topic/esp32*.
