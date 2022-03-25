@@ -2,10 +2,12 @@
 
 This project shows an example of subcribing and publishing to AWS IoT with the MQTT protocol.
 
-## Download the project and load it into VS Code
+## Download the project 
 ```
 git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 ```
+
+## Load the project into VS Code
 
 Load the project into VS Code: *File* -> *Open Folder ...*
 
