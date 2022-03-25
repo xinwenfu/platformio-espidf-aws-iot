@@ -20,18 +20,9 @@ Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Pr
   - Amazon web services IoT Platofrm
     - AWS IoT Endpoint Hostname
 
-## Create certificate at AWS IoT console
+## Create policy at AWS IoT console
 1. Log into AWS IoT console
 2. Search and use *IoT Core* service
-3. Secure
-   - Certificate -> Add certificate -> Create certificate
-     - Certificate -> Auto-generate new certificate (recommended)
-     - Certificate status -> Active
-       - Download certificates and keys. Download all certificates and keys. In particular, we need *Device certificate* and *Private key file*.
-
-## Create policy at AWS IoT console
-1. (Optional if already in AWS IoT console) Log into AWS IoT console
-2. (Optional if already using IoT Core) Search and use *IoT Core* service
 3. Secure
    - Policies -> Create policy
      - Policy name
@@ -53,6 +44,17 @@ Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Pr
   ]
 }
 ```
+
+## Create certificate at AWS IoT console
+1. (Optional if already in AWS IoT console) Log into AWS IoT console
+2. (Optional if already using IoT Core) Search and use *IoT Core* service
+3. Secure
+   - Certificate -> Add certificate -> Create certificate
+     - Certificate -> Auto-generate new certificate (recommended)
+     - Certificate status -> Active
+       - Download certificates and keys. Download all certificates and keys. In particular, we need *Device certificate* and *Private key file*.
+
+
 ## Change device certificate and key file within VS code
 When the project is loaded into VS Code, there are three files under src->certs 
 1. aws-root-ca.pem. No need to change
