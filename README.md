@@ -1,4 +1,4 @@
-# Amazon Web Services IoT MQTT Subscribe/Publish Example
+# AWS IoT MQTT Subscribe/Publish Project
 
 This project shows an example of subcribing and publishing to AWS IoT with the MQTT protocol.
 
