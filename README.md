@@ -52,6 +52,8 @@ Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Pr
   ]
 }
 ```
-## Replace local certificate and key file
-1. certificate.pem.crt
-2. private.pem.key
+## Replace device certificate and key file within VS code
+When the project is loaded into VS Code, there are three files under src->certs 
+1. aws-root-ca.pem. No need to change
+2. certificate.pem.crt. Replace its content with the content of downloaded *Device certificate*
+3. private.pem.key. Replace its content with the content of downloaded *Private key file*
