@@ -49,11 +49,10 @@ An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-po
 ```
 In the policy statement, 
 - *Effect* allows or denies the action, 
-- *Action* specifies the action allowed or denied by the policy
-- *Resource* specifies the resource or resources on which the action is allowed or denied.
+- [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies the action allowed or denied by the policy
+- [*Resource*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-action-resources.html) specifies the resource or resources on which the action is allowed or denied.
 
-Resource, which specifies the resource or resources on which the action is allowed or denied.
-
+Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/iot/latest/developerguide/pub-sub-policy.html).
 
 ## Create certificate at AWS IoT console
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
