@@ -56,6 +56,7 @@ In the policy statement,
 Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/iot/latest/developerguide/pub-sub-policy.html).
 
 ## Create certificate at AWS IoT console
+Each thing shall have a private keya and a certificate, which will be used for client/thing authentication. In this project, the AWS IoT server creates the private key and certificate for the thing. 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
 3. Secure
@@ -67,10 +68,10 @@ Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/io
      - Click the created certificate and attach the created policy
 
 ## Change device certificate and key file within VS code
-When the project is loaded into VS Code, there are three files under src->certs 
-1. aws-root-ca.pem. No need to change
-2. certificate.pem.crt. Replace its content with the content of downloaded *Device certificate*
-3. private.pem.key. Replace its content with the content of downloaded *Private key file*
+When the project is loaded into VS Code, there are three files under the folder *src*->*certs*. 
+1. aws-root-ca.pem. No need to change. The AWS root ca certificate can also be downloaded when the AWS IoT creates the certificate and private key for the thing. 
+2. certificate.pem.crt. Click it and replace its content with the content of downloaded *Device certificate*
+3. private.pem.key. Click it and replace its content with the content of downloaded *Private key file*
 
 ## Build, upload and serial monitor
 Now build the project, and upload the firmware into ESP32. Use serial monitor to monitor the output from ESP32.
