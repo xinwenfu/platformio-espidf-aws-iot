@@ -1,6 +1,6 @@
 # AWS IoT MQTT Subscribe/Publish Project
 
-This project shows an example of subcribing and publishing to AWS IoT with the MQTT protocol. It is the PlatformIO AWS IoT example project.
+This project shows an example of subcribing and publishing to AWS IoT via the MQTT protocol. It is the PlatformIO AWS IoT example project.
 
 ## Download the project 
 Open a terminal, choose a folder and download the project. Below is an example downloading the project to */home/iot/Documents/PlatformIO/Projects*
