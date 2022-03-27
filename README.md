@@ -12,7 +12,7 @@ git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 
 Load the project into VS Code: *File* -> *Open Folder ...*
 
-## Things to configure
+## memuconfig
 
 Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*
 - Example configuration
