@@ -3,8 +3,9 @@
 This project shows an example of subcribing and publishing to AWS IoT with the MQTT protocol. It is the PlatformIO AWS IoT example project.
 
 ## Download the project 
-
+Open a terminal, choose a folder and download the project. Below is an example downloading the project to */home/iot/Documents/PlatformIO/Projects*
 ```
+cd /home/iot/Documents/PlatformIO/Projects
 git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 ```
 ## Load the project into VS Code
@@ -22,6 +23,7 @@ Run memuconfig to configure WiFi and AWS IoT end point: *PlatformIO Icon* -> *Pr
     - AWS IoT Endpoint Hostname
 
 ## Create policy at AWS IoT console
+An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) configures what the device/thing will be allowed to do such as iot:Connect (permission to connect to AWS IoT Core), iot:Receive (permission to receive a message from AWS IoT Core), iot:Publish  (permission to publish to a topic) and iot:Subscribe (permission to subscribe to a topic)
 1. Log into AWS IoT console
 2. Search and use *IoT Core* service
 3. Secure
