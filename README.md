@@ -51,7 +51,7 @@ In the policy statement,
 - *Effect* allows or denies the action, 
 - [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies the action allowed or denied by the policy
 - [*Resource*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-action-resources.html) specifies the resource or resources on which the action is allowed or denied.
-- * is the wildcard character used in a policy.
+- '*' is the wildcard character used in a policy.
 
 Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/iot/latest/developerguide/pub-sub-policy.html).
 
