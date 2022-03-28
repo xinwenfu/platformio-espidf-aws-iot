@@ -1,4 +1,4 @@
-# AWS IoT MQTT Subscribe/Publish Project
+# AWS IoT MQTT Subscribe/Publish PlatformIO Project
 
 This project shows an example of subcribing and publishing to AWS IoT via the MQTT protocol. It is the official PlatformIO AWS IoT example project.
 
