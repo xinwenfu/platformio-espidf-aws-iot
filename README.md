@@ -24,7 +24,7 @@ Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> 
 
 ## Create policy at AWS IoT console
 An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) configures what the device/thing will be allowed to do, e.g., *iot:Connect* (connecting to AWS IoT Core), *iot:Receive* (receiving a message from AWS IoT Core), *iot:Publish*  (publishing to a topic) and *iot:Subscribe* (subscribing to a topic)
-1. Log into AWS IoT console
+1. Log into [AWS console](https://aws.amazon.com/console/)
 
 <img src="imgs/AWSIoTConsole.PNG">
 
