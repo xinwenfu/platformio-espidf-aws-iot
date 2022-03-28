@@ -48,7 +48,7 @@ An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-po
 }
 ```
 In the policy statement, 
-- *Effect* allows or denies the action, 
+- *Effect* allows or denies an action, 
 - [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies the action allowed or denied by the policy
 - [*Resource*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-action-resources.html) specifies the resource or resources on which the action is allowed or denied.
 - '*' is the wildcard character used in a policy.
