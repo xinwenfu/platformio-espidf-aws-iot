@@ -26,7 +26,7 @@ Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> 
 An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) configures what the device/thing will be allowed to do, e.g., *iot:Connect* (connecting to AWS IoT Core), *iot:Receive* (receiving a message from AWS IoT Core), *iot:Publish*  (publishing to a topic) and *iot:Subscribe* (subscribing to a topic)
 1. Log into AWS IoT console
 2. Search and use *IoT Core* service
-3. In the left navigation pane, configure by navigating the following entries in order.
+3. In the left navigation pane, configure by navigating through the following entries in order.
    - *Secure*
      - *Policies* -> *Create policy*
        - *Policy name*
@@ -60,7 +60,7 @@ Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/io
 Each thing shall have a private key and a certificate, which will be used for client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
-3. In the left navigation pane, configure by navigating the following entries in order.
+3. In the left navigation pane, configure by navigating through the following entries in order.
    - *Secure*
      - *Certificate* -> *Add certificate* -> *Create certificate*
        - *Certificate* -> *Auto-generate new certificate (recommended)*
