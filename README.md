@@ -15,12 +15,12 @@ Load the project into VS Code: *File* -> *Open Folder ...*
 ## memuconfig
 
 Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*
-- Example configuration
-  - WiFi SSID
-  - WiFi Password
-- Component config 
-  - Amazon web services IoT Platofrm
-    - AWS IoT Endpoint Hostname
+- *Example configuration*
+  - *WiFi SSID*
+  - *WiFi Password*
+- *Component config*
+  - *Amazon web services IoT Platofrm*
+    - *AWS IoT Endpoint Hostname*
 
 ## Create policy at AWS IoT console
 An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) configures what the device/thing will be allowed to do, e.g., *iot:Connect* (connecting to AWS IoT Core), *iot:Receive* (receiving a message from AWS IoT Core), *iot:Publish*  (publishing to a topic) and *iot:Subscribe* (subscribing to a topic)
@@ -59,19 +59,19 @@ Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/io
 Each thing shall have a private key and a certificate, which will be used for client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
-3. Secure
-   - Certificate -> Add certificate -> Create certificate
-     - Certificate -> Auto-generate new certificate (recommended)
-     - Certificate status -> Active
-       - Download certificates and keys. Download all certificates and keys. 
+3. *Secure*
+   - *Certificate* -> *Add certificate* -> *Create certificate*
+     - *Certificate* -> *Auto-generate new certificate (recommended)*
+     - *Certificate status* -> *Active*
+       - *Download certificates and keys*. Download all certificates and keys. 
        - In particular, we need *Device certificate* and *Private key file*. The two files are text files and can be opened with any text editor.
      - Click the created certificate and attach the created policy
 
 ## Change device certificate and key file within VS code
 When the project is loaded into VS Code, there are three files under the folder *src*->*certs*. 
-1. aws-root-ca.pem. No need to change. The AWS root CA certificate can also be downloaded when the AWS IoT creates the certificate and private key for the thing. 
-2. certificate.pem.crt. Click it and replace its content with the content of downloaded *Device certificate*
-3. private.pem.key. Click it and replace its content with the content of downloaded *Private key file*
+1. *aws-root-ca.pem*. No need to change. The AWS root CA certificate can also be downloaded when the AWS IoT creates the certificate and private key for the thing. 
+2. *certificate.pem.crt*. Click it and replace its content with the content of downloaded *Device certificate*
+3. *private.pem.key*. Click it and replace its content with the content of downloaded *Private key file*
 
 ## Build, upload and serial monitor
 Now build the project, and upload the firmware into ESP32. Use serial monitor to monitor the output from ESP32.
