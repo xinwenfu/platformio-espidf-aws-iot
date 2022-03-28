@@ -69,7 +69,7 @@ Each thing shall have a private keya and a certificate, which will be used for c
 
 ## Change device certificate and key file within VS code
 When the project is loaded into VS Code, there are three files under the folder *src*->*certs*. 
-1. aws-root-ca.pem. No need to change. The AWS root ca certificate can also be downloaded when the AWS IoT creates the certificate and private key for the thing. 
+1. aws-root-ca.pem. No need to change. The AWS root CA certificate can also be downloaded when the AWS IoT creates the certificate and private key for the thing. 
 2. certificate.pem.crt. Click it and replace its content with the content of downloaded *Device certificate*
 3. private.pem.key. Click it and replace its content with the content of downloaded *Private key file*
 
