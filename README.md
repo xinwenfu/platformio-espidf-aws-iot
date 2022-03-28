@@ -60,13 +60,14 @@ Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/io
 Each thing shall have a private key and a certificate, which will be used for client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
-3. *Secure*
-   - *Certificate* -> *Add certificate* -> *Create certificate*
-     - *Certificate* -> *Auto-generate new certificate (recommended)*
-     - *Certificate status* -> *Active*
-       - *Download certificates and keys*. Download all certificates and keys. 
-       - In particular, we need *Device certificate* and *Private key file*. The two files are text files and can be opened with any text editor.
-     - Click the created certificate and attach the created policy
+3. In the left navigation pane, configure by navigating the following entries in order.
+   - *Secure*
+     - *Certificate* -> *Add certificate* -> *Create certificate*
+       - *Certificate* -> *Auto-generate new certificate (recommended)*
+       - *Certificate status* -> *Active*
+         - *Download certificates and keys*. Download all certificates and keys. 
+         - In particular, we need *Device certificate* and *Private key file*. The two files are text files and can be opened with any text editor.
+       - Click the created certificate and attach the created policy
 
 ## Change device certificate and key file within VS code
 When the project is loaded into VS Code, there are three files under the folder *src*->*certs*. 
