@@ -14,7 +14,7 @@ Load the project into VS Code: *File* -> *Open Folder ...*
 
 ## memuconfig
 
-Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*
+Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*. After the settings are configured, press the ESC key and exit the menuconfig, which asks whether to save the changed settings. Click *Yes* to save the settings. Otherwise, the changed settings will be lost.
 - *Example configuration*
   - *WiFi SSID*
   - *WiFi Password*
