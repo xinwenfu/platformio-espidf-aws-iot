@@ -12,9 +12,9 @@ git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 
 Load the project into VS Code: *File* -> *Open Folder ...*
 
-## memuconfig
+## menuconfig
 
-Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*. After the settings are configured, press the ESC key and exit menuconfig, which asks whether to save the changed settings. Click *Yes* to save the settings. Otherwise, the changed settings will be lost.
+Run menuconfig to configure WiFi and AWS IoT end point via *ESP-IDF SDK Configuration Editor (menuconfig)* button at the bottom of the screen, or by typing ``` idf.py menuconfig ``` in a *ESP-IDF Terminal*. After the settings described below are configured, save and close the window. This is done by pressing *S* and then the ESC key if you used the *ESP-IDF Terminal* otherwise click save and close the window (tab). If we do not save the changes, they will not be reflected in the next build.
 - *Example configuration*
   - *WiFi SSID*
   - *WiFi Password*
@@ -53,14 +53,14 @@ An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-po
 ```
 In the policy statement, 
 - *Effect* allows or denies an action
-- [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies the action allowed or denied by the policy
+- [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies a list of actions allowed or denied by the policy
 - [*Resource*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-action-resources.html) specifies the resource or resources on which the action is allowed or denied.
-- '*' is the wildcard character used in a policy.
+  - '*' is the wildcard character used in a policy which means all resources.
 
 Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/iot/latest/developerguide/pub-sub-policy.html).
 
 ## Create certificate at AWS IoT console
-Each thing shall have a private key and a certificate, which will be used for client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
+Each thing will have a private key and certificate pair, which will be used for the client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
 3. In the left navigation pane, configure by navigating through the following entries in order.
