@@ -3,11 +3,12 @@
 This project shows an example of subcribing and publishing to AWS IoT via the MQTT protocol. It is the official PlatformIO AWS IoT example project.
 
 ## Download the project 
-Open a terminal, choose a folder and download the project. Below is an example downloading the project to */home/iot/Documents*
+**Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/ ``` directory of the Ubuntu VM.
 ```
-cd /home/iot/Documents
 git clone --recurse-submodules https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 ```
+
+
 ## Load the project into VS Code
 
 Load the project into VS Code: *File* -> *Open Folder ...*
