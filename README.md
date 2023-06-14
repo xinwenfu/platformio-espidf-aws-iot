@@ -6,7 +6,7 @@ This project shows an example of subcribing and publishing to AWS IoT via the MQ
 Open a terminal, choose a folder and download the project. Below is an example downloading the project to */home/iot/Documents*
 ```
 cd /home/iot/Documents
-git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
+git clone --recurse-submodules https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 ```
 ## Load the project into VS Code
 
