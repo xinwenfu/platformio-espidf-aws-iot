@@ -13,7 +13,7 @@ git clone --recurse-submodules https://github.com/xinwenfu/platformio-espidf-aws
 
 Load the project into VS Code: *File* -> *Open Folder ...*
 
-## menuconfig
+## Menuconfig
 
 Run menuconfig to configure WiFi and AWS IoT end point via *ESP-IDF SDK Configuration Editor (menuconfig)* button at the bottom of the screen, or by typing ``` idf.py menuconfig ``` in a *ESP-IDF Terminal*. After the settings described below are configured, save and close the window. This is done by pressing *S* and then the ESC key if you used the *ESP-IDF Terminal* otherwise click save and close the window (tab). If we do not save the changes, they will not be reflected in the next build.
 - *Example configuration*
@@ -22,6 +22,13 @@ Run menuconfig to configure WiFi and AWS IoT end point via *ESP-IDF SDK Configur
 - *Component config*
   - *Amazon web services IoT Platofrm*
     - *AWS IoT Endpoint Hostname*
+
+## Component Dependency
+Install the jsmn component using the following command.
+
+```
+ idf.py add-dependency "espressif/jsmn^1.1.0"
+```
 
 ## Create policy at AWS IoT console
 An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) configures what the device/thing will be allowed to do, e.g., *iot:Connect* (connecting to AWS IoT Core), *iot:Receive* (receiving a message from AWS IoT Core), *iot:Publish*  (publishing to a topic) and *iot:Subscribe* (subscribing to a topic)
