@@ -72,8 +72,8 @@ Each thing will have a private key and certificate pair, which will be used for 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
 3. In the left navigation pane, configure by navigating through the following entries in order.
-   - *Secure*
-     - *Certificate* -> *Add certificate* -> *Create certificate*
+   - *Security*
+     - *Certificates* -> *Add certificate* -> *Create certificate*
        - *Certificate* -> *Auto-generate new certificate (recommended)*
        - *Certificate status* -> *Active*
          - *Download certificates and keys*. Download all certificates and keys. 
