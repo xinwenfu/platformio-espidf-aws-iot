@@ -1,34 +1,26 @@
-# AWS IoT MQTT Subscribe/Publish Project
+# AWS IoT MQTT Subscribe/Publish PlatformIO Project
 
 This project shows an example of subcribing and publishing to AWS IoT via the MQTT protocol. It is the official PlatformIO AWS IoT example project.
 
 ## Download the project 
-**Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/ ``` directory of the Ubuntu VM.
+Open a terminal, choose a folder and download the project. Below is an example downloading the project to */home/iot/Documents/PlatformIO/Projects*
 ```
-git clone --recurse-submodules https://github.com/xinwenfu/platformio-espidf-aws-iot.git
+cd /home/iot/Documents/PlatformIO/Projects
+git clone https://github.com/xinwenfu/platformio-espidf-aws-iot.git
 ```
-
-
 ## Load the project into VS Code
 
 Load the project into VS Code: *File* -> *Open Folder ...*
 
-## Menuconfig
+## memuconfig
 
-Run menuconfig to configure WiFi and AWS IoT end point via *ESP-IDF SDK Configuration Editor (menuconfig)* button at the bottom of the screen, or by typing ``` idf.py menuconfig ``` in a *ESP-IDF Terminal*. After the settings described below are configured, save and close the window. This is done by pressing *S* and then the ESC key if you used the *ESP-IDF Terminal* otherwise click save and close the window (tab). If we do not save the changes, they will not be reflected in the next build.
+Run memuconfig to configure WiFi and AWS IoT end point via *PlatformIO Icon* -> *Project Tasks* -> *Platform* -> *Run Menoconfig*. After the settings are configured, press the ESC key and exit menuconfig, which asks whether to save the changed settings. Click *Yes* to save the settings. Otherwise, the changed settings will be lost.
 - *Example configuration*
   - *WiFi SSID*
   - *WiFi Password*
 - *Component config*
   - *Amazon web services IoT Platofrm*
     - *AWS IoT Endpoint Hostname*
-
-## Component Dependency
-Install the jsmn component using the following command.
-
-```
- idf.py add-dependency "espressif/jsmn^1.1.0"
-```
 
 ## Create policy at AWS IoT console
 An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) configures what the device/thing will be allowed to do, e.g., *iot:Connect* (connecting to AWS IoT Core), *iot:Receive* (receiving a message from AWS IoT Core), *iot:Publish*  (publishing to a topic) and *iot:Subscribe* (subscribing to a topic)
@@ -61,19 +53,19 @@ An [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-po
 ```
 In the policy statement, 
 - *Effect* allows or denies an action
-- [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies a list of actions allowed or denied by the policy
+- [*Action*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-actions.html) specifies the action allowed or denied by the policy
 - [*Resource*](https://docs.aws.amazon.com/iot/latest/developerguide/iot-action-resources.html) specifies the resource or resources on which the action is allowed or denied.
-  - '*' is the wildcard character used in a policy which means all resources.
+- '*' is the wildcard character used in a policy.
 
 Here are some [publish/subscribe policy examples](https://docs.aws.amazon.com/iot/latest/developerguide/pub-sub-policy.html).
 
 ## Create certificate at AWS IoT console
-Each thing will have a private key and certificate pair, which will be used for the client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
+Each thing shall have a private key and a certificate, which will be used for client/thing authentication. In this project, we use the AWS IoT server to create the private key and certificate for the thing. 
 1. (Optional if already in AWS IoT console) Log into AWS IoT console
 2. (Optional if already using IoT Core) Search and use *IoT Core* service
 3. In the left navigation pane, configure by navigating through the following entries in order.
-   - *Security*
-     - *Certificates* -> *Add certificate* -> *Create certificate*
+   - *Secure*
+     - *Certificate* -> *Add certificate* -> *Create certificate*
        - *Certificate* -> *Auto-generate new certificate (recommended)*
        - *Certificate status* -> *Active*
          - *Download certificates and keys*. Download all certificates and keys. 
